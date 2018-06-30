@@ -69,7 +69,7 @@ const projectFeatureCollection = function(_featureCollection, codeSridFrom, code
     let featureCollection = JSON.parse(JSON.stringify(_featureCollection));
     let features = featureCollection.features;
     for (let i = 0; i < features.length; i++){
-        features[i] = projectFeature(features[i],fromProjection,toProjection, 2);
+        features[i] = projectFeature(features[i],fromProjection,toProjection, digits);
     }
     return featureCollection;
 }
