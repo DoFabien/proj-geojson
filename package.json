@@ -1,0 +1,18 @@
+{
+  "name": "proj-geojson",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "proj4",
+    "geojson"
+  ],
+  "author": "Fabien Del Olmo",
+  "license": "ISC",
+  "dependencies": {
+    "proj4": "^2.4.4"
+  }
+}
