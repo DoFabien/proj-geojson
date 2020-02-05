@@ -1,6 +1,6 @@
 {
   "name": "proj-geojson",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,6 @@
   "author": "Fabien Del Olmo",
   "license": "ISC",
   "dependencies": {
-    "proj4": "^2.4.4"
+    "proj4": "^2.6.0"
   }
 }

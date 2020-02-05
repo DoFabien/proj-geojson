@@ -45,6 +45,18 @@ const projectMultiRings = function(multiRings, fromProj4, toProj4, digits = null
 }
 
 const projectFeature = function(feature, fromProj4, toProj4, digits = null){
+    if (!feature){
+        return
+    }
+    if (!feature.geometry){
+        return;
+    }
+    if (!feature.geometry.type){
+        return;
+    }
+    
+
+
     if( feature.geometry.type === 'Point'){
         feature.geometry.coordinates = projectPoint(feature.geometry.coordinates ,fromProj4, toProj4, digits )
     } else if ( feature.geometry.type === 'MultiPoint' || feature.geometry.type === 'LineString'){
@@ -69,7 +81,11 @@ const projectFeatureCollection = function(_featureCollection, codeSridFrom, code
     let featureCollection = JSON.parse(JSON.stringify(_featureCollection));
     let features = featureCollection.features;
     for (let i = 0; i < features.length; i++){
-        features[i] = projectFeature(features[i],fromProjection,toProjection, digits);
+        const newFeat =  projectFeature(features[i],fromProjection,toProjection, digits);
+        if (newFeat){
+            features[i] = newFeat;
+        }
+        
     }
     return featureCollection;
 }
