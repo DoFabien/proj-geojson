@@ -1,14 +1,21 @@
 {
   "name": "nexusbr-proj-geojson",
-  "version": "0.2.3",
-  "description": "",
+  "version": "0.2.4",
+  "description": "Convert geojson to specific projection. Includes brazilian projections to proj-geojson.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexusbr/nexusbr-proj-geojson"
+  }
   "keywords": [
     "proj4",
-    "geojson"
+    "geojson", 
+    "geosan",
+    "brazil",
+    "saneamento"
   ],
   "author": "José Maria Villac Pinheiro",
   "license": "ISC",
