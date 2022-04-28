@@ -1,6 +1,6 @@
 {
   "name": "nexusbr-proj-geojson",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Convert geojson to specific projection. Includes brazilian projections to proj-geojson.",
   "main": "index.js",
   "scripts": {
